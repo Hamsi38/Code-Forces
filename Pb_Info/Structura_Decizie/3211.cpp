@@ -1,0 +1,16 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+
+    int S,C,N;
+    cin>>S>>C>>N;
+
+    if(S%C==0 && S%N==0) cout<<"CN";
+    else if(S%C==0 && S%N != 0) cout<<"C";
+    else if(S%C != 0 && S%N == 0) cout<<"N";
+    else cout<<"nimic";
+
+    return 0;
+}
